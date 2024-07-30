@@ -1,0 +1,21 @@
+{
+  "name": "microservices",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "normal": "concurrently \"node normal/microservice1.js\" \"node normal/gateway.js\"",
+    "redis": "concurrently \"node redis/microservice1.js\" \"node redis/gateway.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "concurrently": "^8.2.2",
+    "express": "^4.19.2",
+    "ioredis": "^5.4.1"
+  }
+}
